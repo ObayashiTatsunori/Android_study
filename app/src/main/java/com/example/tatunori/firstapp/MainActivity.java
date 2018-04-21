@@ -20,6 +20,17 @@ public class MainActivity extends AppCompatActivity {
         firstText.setTextSize(100);
         firstText.setText(String.valueOf(tenOfFactorial()));
         firstText.setTextColor(color);
+
+        Cat tama = new Cat("タマ",3,"オス","三毛猫");
+        Cat kuro = new Cat("クロ",1,"メス","黒猫");
+
+        tama.greet();
+        kuro.greet();
+        tama.sleep();
+        kuro.say("寝てるし_");
+        kuro.sleep();
+        kuro.talkabout(tama);
+        tama.talkabout(kuro);
     }
     private long caluculaterFactorial(int n){
         long product =1L;
